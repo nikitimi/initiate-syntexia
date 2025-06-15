@@ -6,7 +6,7 @@ class NotificationSound:
     """ Sound player for Windows. """
 
     def __init__(self, sound_path):
-        file = open(self._path)
+        file = open(sound_path)
         if not file.buffer.readable():
             raise(NotificationSoundException(f"{sound_path} is not playable.", NotificationSoundException.CODE_UNPLAYABLE))
         readable_buffer = file.buffer.read()
@@ -26,7 +26,8 @@ class NotificationSoundException(BaseException):
 
 if __name__ == '__main__':
     root_path = pathlib.Path(__file__).parent
-    sounds_path = root_path.joinpath('sounds')
+    sounds_path = root_path.joinpath('res/sounds')
     sounds = os.listdir(sounds_path)
 
     NotificationSound(sounds_path.joinpath(random.choice(sounds)))
+  

@@ -1,6 +1,7 @@
-Initiate Syntexia:
+# Initiate Syntexia:
 
 - Windows:
+
   This is to be used in conjunction with Task Scheduler.
 
 [FFMPEG Documentation](https://ffmpeg.org/ffmpeg.html#AVOptions)
@@ -18,3 +19,18 @@ Returns only the "three-part call interlude" of the song [AiScream](https://www.
 ```
     ffmpeg -ss 91 -i aiscream.mp3 -t 22.5 aiscream.wav
 ```
+
+### Window's Task Scheduler
+
+**General:**
+
+![general](res/pictures/general.png)
+
+**Triggers:**
+![triggers](res/pictures/triggers.png)
+
+**Actions:**
+
+Add the script as the argument.
+
+![actions](res/pictures/actions.png)
