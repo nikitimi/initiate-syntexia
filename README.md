@@ -27,6 +27,7 @@ Returns only the "three-part call interlude" of the song [AiScream](https://www.
 ![general](res/pictures/general.png)
 
 **Triggers:**
+
 ![triggers](res/pictures/triggers.png)
 
 **Actions:**
